@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generated_at": "2026-11-06T21:02:40Z",
+  "generated_at": "2026-11-10T21:24:44Z",
   "source_repo": "y1-community/pr1-stock-rom",
   "mirror_repo": "y1-community/pr1-stock-rom-mirror",
   "title_prefix": "Portable Flashing Package: ",
@@ -11,35 +11,48 @@
       "os": "windows",
       "arch": "x86-64",
       "suffix": "-windows.zip",
-      "layout": "sp_flash_tool"
+      "layout": "sp_flash_tool",
+      "legacy": false
     },
     {
       "key": "windows-arm64",
       "os": "windows",
       "arch": "arm64",
       "suffix": "-windows-arm64.zip",
-      "layout": "sp_flash_tool"
+      "layout": "sp_flash_tool",
+      "legacy": false
+    },
+    {
+      "key": "windows-legacy",
+      "os": "windows",
+      "arch": "x86",
+      "suffix": "-windows-legacy.zip",
+      "layout": "sp_flash_tool",
+      "legacy": true
     },
     {
       "key": "linux",
       "os": "linux",
       "arch": "x86-64",
       "suffix": "-linux.zip",
-      "layout": "sp_flash_tool"
+      "layout": "sp_flash_tool",
+      "legacy": false
     },
     {
       "key": "linux-arm64",
       "os": "linux",
       "arch": "arm64",
       "suffix": "-linux-arm64.zip",
-      "layout": "sp_flash_tool"
+      "layout": "sp_flash_tool",
+      "legacy": false
     },
     {
       "key": "macos",
       "os": "macos",
       "arch": "universal",
       "suffix": "-macos.zip",
-      "layout": "beside_dmg"
+      "layout": "beside_dmg",
+      "legacy": false
     }
   ],
   "releases": [],
